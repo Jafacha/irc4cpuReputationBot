@@ -15,7 +15,7 @@ And people conducting an interview can use this to check all different factors i
    +Trustworthyness
 Each can effect up to 6.666666667 points.
 If written in PHP, then there will be an installer which does this:
-  Creates a table for reputation, users, networks, channels, and bot config.
+  Creates a table for reputation, users, networks, and channels.
 
 Table structure (With example row):
   Reputation:
@@ -31,3 +31,17 @@ Table structure (With example row):
     ------------------------------------------------------------
     |Someone|Freenode  |SomePass  |21:22.03.06.12|Hello        |
     ------------------------------------------------------------
+    Note: LastSeen time is in this format: HH:MM.MM.DD.YY  
+
+  Networks:
+    ------------------------------------
+    |Address         |Name     |ID     |
+    ------------------------------------
+    |irc.freenode.net|freenode |0      |
+    ------------------------------------
+  Channels:
+    -----------------------------------------
+    |Channel  |Network    |Creator     |ID  |
+    -----------------------------------------
+    |#irc4cpu |freenode   |wolfmitchell|0   |
+    -----------------------------------------
