@@ -1,1 +1,29 @@
-Under construction
+Based off of Supybot and the Praise plugin. Plan to use PHP for the AI, OR: Make a bot in PHP and put it here. Maybe a web interface if I do this,
+to easily manage it, just gotta open a browser, login, and manage it. And you can send the bot to your channels, and, in time, create a database in
+which there is a reputation for everyone on a network, branch to another, get reputation ,etc, until there is a reputation for everyone. It is based
+on this scale:
+
+BAD[-10 ----------0---------- 10]GOOD
+
+And people conducting an interview can use this to check all different factors including:
+   +Kindness
+   +Helpfulness
+   +Trustworthyness
+Each can effect up to 6.666666667 points.
+If written in PHP, then there will be an installer which does this:
+  Creates a table for reputation, users, networks, channels, and bot config.
+
+Table structure (With example row):
+  Reputation:
+    --------------------------------------------------------------------------------------
+    |User    |Network  |Channels  |Kindness   |Helpfulness  | Trustworthyness |Reputation|
+    --------------------------------------------------------------------------------------
+    |Someone |Freenode |#irc4cpu  |6.666666667|6.666666667  |6.666666667      |+10       |
+    --------------------------------------------------------------------------------------
+  
+  Users:
+    ------------------------------------------------------------
+    |User   |Network   |Pass      |LastSeen      |LastMessage  |
+    ------------------------------------------------------------
+    |Someone|Freenode  |SomePass  |21:22.03.06.12|Hello        |
+    ------------------------------------------------------------
